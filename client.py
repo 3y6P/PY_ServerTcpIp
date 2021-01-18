@@ -42,10 +42,10 @@ class ClientClass(object):
 			else:
 				try:
 					message = "DF20023030DF210130DF2206303844374234DF230154DF24034B4C4BDF260130DF270130"
-					print("Message was sended in server: " + message)
+					print("try message was sended in server: " + message)
 
 					if message != "":
-						s.sendto(("[" + clientName + "]:"+message).encode("utf-8"),self.server)
+						s.sendto((message).encode("utf-8"),self.server)
 
 					time.sleep(3)
 

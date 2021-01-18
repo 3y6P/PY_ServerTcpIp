@@ -2,8 +2,6 @@ import re
 
 class RegexClass(object):
 
-    tagsArray = "DF20023030DF210130DF2206303844374234DF230154DF24034B4C4BDF260130DF270130"
-
     def StrokingCut(self, array, min , max):
         strokeResult = ""
         for i in range(len(array)):
@@ -40,8 +38,3 @@ class RegexClass(object):
             TagsArr.append(resultStroke)
 
         return TagsArr
-
-if __name__ == "__main__":
-    f = RegexClass()
-    print(f.StrokeMagic(f.tagsArray))
-#print(StrokeMagic(tagsArray))

@@ -1,8 +1,10 @@
 import socket, time
+
+from Filer import FilerClass
 from regexer import RegexClass
 
 
-class ServerClass(object):
+class ServerClass(RegexClass, FilerClass):
 	clients = []
 	quit = False
 
@@ -33,7 +35,8 @@ class ServerClass(object):
 				clientDataTimeJoin = time.strftime("%Y-%m-%d-%H.%M.%S", time.localtime())
 
 				print("["+addr[0]+"]=["+str(addr[1])+"]=["+clientDataTimeJoin+"]/",end="")
-				print(data.decode("utf-8"))
+
+				print(RegexClass.StrokeMagic(self, data.decode("utf-8")))
 
 
 
