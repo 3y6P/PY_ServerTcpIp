@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<Properies reminder="15">
+   <Server>
+       <serverIP>sIP</serverIP>
+       <serverPort>sPort</serverPort>
+   </Server>
+    <Client>
+        <Connection>
+            <serverConnectIP>sCCIP</serverConnectIP>
+            <serverConnectPort>sCCIP</serverConnectPort>
+        </Connection>
+        <ClientIp>CIP</ClientIp>
+        <ClientPort>CP</ClientPort>
+   </Client>
+</Properies>
